@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="vr">
+		
+		<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+		<script src="dist/aframe-gamepad-controls.js"></script>
+		<script src="js/components/link-controls.js"></script>
+	</head>
+	<body>
+		<a-scene light="defaultLightsEnabled: false" raycaster="far: 1; objects: [link];">
+			<a-assets>
+        	<img id="worldtwo" crossOrigin="anonymous" src="01.png">
+      		</a-assets>
+
+			<a-entity camera="userHeight: 1.6"
+                look-controls
+                gamepad-controls="flyEnabled: true"></a-entity>
+            <a-link href="02.html" position="-11.371 32.543 15.119" rotation="0 -38.44546805327824 0" scale="2.232 3.513 0.489 image="#worldtwo"></a-link>
+			<a-entity position="-15 -4 -12" collada-model="worldone.dae" scale="100 100 100"></a-entity>
+			<a-entity scale="100 100 100" geometry="primitive:sphere" material="shader:flat;side:double;color:#c0c0c0"></a-entity>
+			<a-entity light="color:#BBB;type:ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
+			<a-entity light="intensity:0.6" position="0 4 1" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+		</a-scene>
+		<script>
+			document.querySelector('a-scene').enterVR()
+		</script>
+	</body>
+</html>

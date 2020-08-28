@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Softwar(e) | Text Bot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+  	<link rel="icon" href="images/e.png" type="image/png" sizes="32x32">
+
+  	<script type="text/javascript">
+  		function OpenMenu () {
+		document.getElementById("menu").style.visibility = "visible";}
+
+		function CloseMenu () {
+		document.getElementById("menu").style.visibility = "hidden";}
+  	</script>
+</head>
+<body style="background-color: #fff;">
+
+	<div class="row">
+		<div class="one column menu-icon">
+			<i class="fas fa-bars" onclick="OpenMenu()"></i>
+		</div>
+	</div>
+
+	<div class="row">
+	<nav class="one column" id="menu">
+		<div class="one column menu-icon" id="close">
+			<i class="fas fa-times" onclick="CloseMenu()"></i>
+		</div>
+		<ul>
+			<li><span class="home"><a href="index.html"><i class="home fas fa-home"></i></a></span></li>
+			<li><span><a href="about.html">About</a></span></li>
+			<li><span><a href="manifesto.html">Manifesto</a></span></li>
+			<li><span><a href="video.html">Video</a></span></li>
+			<li><span><a href="textbot.html">Text Bot</a></span></li>
+			<li><span><a href="webvr/index.html" target="_blank">WebVR</a></span></li>
+		</ul>
+	</nav>	
+
+	<div class="container">	
+
+<div class="row">
+	      <div class="one column">
+	        <h1 class="softwar-manifesto"><span>Text Bot</span></h1>
+	      </div>
+	     </div> 
+
+		<div class="row">
+	    	<div class="half column" style="background-color: #000;">
+	        	<p class="text1" style="border: none;">
+	        		The text-bot enables users to interact with an artificial intelligence intended to resemble the non-chronological stream of social media content in a more intimate communication platform. Users will receive intentionally randomized messages driven by opaque algorithms.
+	        		<br><br>
+	        		For a real-time manifestation say hi to this number: <span>+1 (562) 372-6855</span>.
+				</p>	
+		     </div>
+		     <div class="half column" id="texbot">
+	        	<video controls loop style="width:85%; float:right; margin-bottom: 40px;">
+  					<source src="media/textbot.mp4" type="video/mp4">
+  				</video>
+		     </div>
+		</div>
+		
+	</div>	
+</body>
+</html>

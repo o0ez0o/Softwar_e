@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Softwar(e) | Video</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+  	<link rel="icon" href="images/e.png" type="image/png" sizes="32x32">
+
+  	<script type="text/javascript">
+  		function OpenMenu () {
+		document.getElementById("menu").style.visibility = "visible";}
+
+		function CloseMenu () {
+		document.getElementById("menu").style.visibility = "hidden";}
+  	</script>
+</head>
+<body style="background-color:#000;">
+
+	<div class="row">
+		<div class="one column menu-icon">
+			<i class="fas fa-bars" onclick="OpenMenu()"></i>
+		</div>
+	</div>
+
+	<div class="row">
+	<nav class="one column" id="menu">
+		<div class="one column menu-icon" id="close">
+			<i class="fas fa-times" onclick="CloseMenu()"></i>
+		</div>
+		<ul>
+			<li><span class="home"><a href="index.html"><i class="home fas fa-home"></i></a></span></li>
+			<li><span><a href="about.html">About</a></span></li>
+			<li><span><a href="manifesto.html">Manifesto</a></span></li>
+			<li><span><a href="video.html">Video</a></span></li>
+			<li><span><a href="textbot.html">Text Bot</a></span></li>
+			<li><span><a href="webvr/index.html" target="_blank">WebVR</a></span></li>
+		</ul>
+	</nav>	
+
+	<div class="container">	
+
+		<div class="row">
+	    	<div class="one column"">
+	    		<iframe id="vid" src="https://www.youtube.com/embed/zmtm6cLARCw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	        <div>	
+		</div>
+	</div>	
+</body>
+</html>
